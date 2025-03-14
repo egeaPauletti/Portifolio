@@ -17,7 +17,7 @@
     position: absolute;
     width: 30px;
     height: 550%;
-    animation: rotBGimg 10s linear infinite;
+    animation: rotBGimg 7.5s linear infinite;
     transition: all 0.5s linear;
     /* z-index: 100; */
   }
@@ -27,7 +27,7 @@
     position: absolute;
     background: #1f1e1e;
     inset: 3px;
-    border-radius: 15px;
+    border-radius: 10px;
   }
 }
 
