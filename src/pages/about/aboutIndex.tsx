@@ -2,7 +2,7 @@ import "./index.css";
 
 function About() {
   return (
-    <div className="w-screen h-screen flex justify-center itens-center">
+    <div className="w-screen h-screen flex justify-center items-center">
       <div className="flex flex-col w-max h-[100vh] justify-center itens-center gap-10 ">
         <h1 className="txtTitle text-3xl font-bold animationSlideFromLeft">
           Sobre mim
