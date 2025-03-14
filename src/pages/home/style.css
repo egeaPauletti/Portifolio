@@ -1,0 +1,12 @@
+@import "tailwindcss";
+.helloIam::after {
+  position: relative;
+  display: inline-block;
+  left: 20px;
+  content: "";
+  height: 5px;
+  width: 25em;
+  border-radius: 10px;
+  bottom: 0.4rem;
+  background-color: #21a366;
+}

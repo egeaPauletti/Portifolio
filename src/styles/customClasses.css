@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+.color-green {
+  color: #21a366;
+}
+
+.color-white {
+  color: #fff;
+}
+
+.font-confortaa {
+  font-family: "Comfortaa", sans-serif;
+}
+
+.list-itens {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s ease;
+  font-size: 18px;
+  margin: 3% 0;
+  font-weight: bold;
+
+  &:hover {
+    transform: scale(1.1);
+    color: var(--color-white);
+
+    &:hover::after {
+      width: 80%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: 15%;
+
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: var(--color-white);
+    transition: 0.5s ease-out;
+  }
+
+  & img {
+    width: 24px;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100vw);
+    opacity: o;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animationSlideFromRight {
+  animation: slideFromRight 1.5s ease-out forwards;
+}
+
+.animationSlideFromLeft {
+  animation: slideFromLeft 1.5s ease-out forwards;
+}
+
+.animationSlideFromBottom {
+  animation: slideFromBottom 1.5s ease-out forwards;
+}
