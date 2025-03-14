@@ -8,7 +8,7 @@ import contactIcon from "../assets/navBar/contactIcon.png";
 
 function Navbar() {
   return (
-    <div className="w-max h-max animationSlideFromBottom absolute right-20 top-30">
+    <div className="w-max h-max animationSlideFromRight absolute right-20 top-30 z-100">
       <ul className="flex gap-10 items-center">
         <li>
           <Link to="/about" className="list-itens">

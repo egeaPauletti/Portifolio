@@ -19,13 +19,12 @@
   align-items: center;
   cursor: pointer;
   transition: 1s ease;
-  font-size: 18px;
+  font-size: 14px;
   margin: 3% 0;
   font-weight: bold;
 
   &:hover {
     transform: scale(1.1);
-    color: var(--color-white);
 
     &:hover::after {
       width: 80%;
