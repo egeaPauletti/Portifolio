@@ -2,7 +2,7 @@
 @media (min-width: 1024px) {
   body {
     font-family: "Roboto", sans-serif;
-    background-image: url(/src/desktop/assets/background.png);
+    background-image: url(/src/large/assets/background.png);
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;

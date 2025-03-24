@@ -12,7 +12,7 @@ export default function NavBar() {
       <div>
         <ul className="flex gap-10">
           <li className="list-items">
-            <Link to="">
+            <Link to="/About">
               <figure className="flex gap-3 items-center">
                 <ProfileIcon size="17" />
                 Sobre Mim

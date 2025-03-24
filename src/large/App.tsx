@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import NavBar from "./components/NavBar";
 import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
 import "../index.css";
 
 function App() {
@@ -18,7 +19,7 @@ function App() {
             </div>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about" element={<></>} />
+              <Route path="/about" element={<About />} />
               <Route path="/hardskills" element={<></>} />
               <Route path="/softskills" element={<></>} />
               <Route path="/projects" element={<></>} />

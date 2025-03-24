@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+.txtTitle::after {
+  position: relative;
+  display: inline-block;
+  left: 20px;
+  content: "";
+  height: 5px;
+  width: 24.5em;
+  border-radius: 10px;
+  bottom: 0.4rem;
+  background-color: #21a366;
+}

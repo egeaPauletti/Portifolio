@@ -19,7 +19,7 @@ export default function NavBar() {
             </span>
           </figure>
         </Link>
-        <div className="flex flex-col items-center w-max h-max gap-7">
+        <div className="flex flex-col items-center w-max h-max gap-7 cursor-pointer">
           <LogoGithub size="40" />
           <LogoLinkedin size="40" />
           <LogoWhatsApp size="40" />
