@@ -1,0 +1,100 @@
+@import "tailwindcss";
+/* Project Colors */
+:root {
+  --primary-color: #ffffff;
+  --second-color: #21a366;
+}
+
+.primaryColor {
+  color: var(--primary-color);
+}
+.secondColor {
+  color: var(--second-color);
+}
+/* --------------------- */
+/* Fonts */
+.comfortaa {
+  font-family: "Comfortaa", sans-serif;
+}
+
+/* --------------------- */
+
+.list-items {
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  transition: 1s ease;
+  font-size: 16px;
+  font-weight: bold;
+
+  &:hover {
+    transform: scale(1.1);
+
+    &:hover::after {
+      width: 80%;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -20%;
+    left: 10%;
+
+    width: 0;
+    height: 2px;
+    display: block;
+    background-color: var(--primary-color);
+    transition: 0.5s ease-out;
+  }
+}
+
+/* Animations */
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    transform: translateY(100vw);
+    opacity: o;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animationSlideFromRight {
+  animation: slideFromRight 1.5s ease-out forwards;
+}
+
+.animationSlideFromLeft {
+  animation: slideFromLeft 1.5s ease-out forwards;
+}
+
+.animationSlideFromBottom {
+  animation: slideFromBottom 1.5s ease-out forwards;
+}

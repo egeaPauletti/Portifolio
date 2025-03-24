@@ -1,1 +1,16 @@
 @import "tailwindcss";
+@media (min-width: 1024px) {
+  body {
+    font-family: "Roboto", sans-serif;
+    background-image: url(/src/desktop/assets/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1023px) {
+  body {
+    background-color: rgb(0, 0, 0);
+  }
+}
